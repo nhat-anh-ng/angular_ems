@@ -52,7 +52,7 @@
     <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef> Symbol </th>
         <td mat-cell *matCellDef="let element"> 
-            <button mat-button>Edit</button> 
+            <button (click)="openDialog()" (click)="onEdit(element)" mat-button>Edit</button> 
             <button (click)="deleteEmployee(element)" mat-button>Delete</button>
         </td>
     </ng-container>

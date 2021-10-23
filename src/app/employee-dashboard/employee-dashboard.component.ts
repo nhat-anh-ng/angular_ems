@@ -3,6 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddUserComponent } from '../add-user/add-user.component';
 import { ApiService } from '../shared/api.service';
 import { EmployeeModel } from '../add-user/employee-dashboard.model';
+import { FormGroup } from '@angular/forms';
 
 export interface User {
   fullname: string;
@@ -23,6 +24,7 @@ const ELEMENT_DATA: User[] = [];
 })
 
 export class EmployeeDashboardComponent implements OnInit {
+  formValue !: FormGroup;
   displayedColumns: string[] = ['id', 'fullname', 'email', 'mobile', 'job', 'department', 'actions'];
   dataSource = ELEMENT_DATA;
 
@@ -58,6 +60,14 @@ export class EmployeeDashboardComponent implements OnInit {
       alert("Employee Deleted");
       this.getAllEmployee();
     })
+  }
+
+  onEdit(element: any){
+    this.formValue.controls['fullname'].setValue(element.fullname);
+    this.formValue.controls['email'].setValue(element.email);
+    this.formValue.controls['mobile'].setValue(element.mobile);
+    this.formValue.controls['job'].setValue(element.job);
+    this.formValue.controls['department'].setValue(element.department);
   }
 
 }
