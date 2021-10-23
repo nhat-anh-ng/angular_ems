@@ -1,11 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    },
-    {
       "id": 2,
       "fullName": "dxqs",
       "email": "cqds",
@@ -28,23 +23,9 @@
       "mobile": "a",
       "job": "a",
       "department": "a"
-    },
-    {
-      "id": 5,
-      "fullName": "n",
-      "email": "n",
-      "mobile": ",",
-      "job": "n",
-      "department": "n"
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }
