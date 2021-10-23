@@ -35,6 +35,6 @@
 </mat-dialog-content>
 
 <mat-dialog-actions fxLayoutAlign="end">
-    <button mat-button mat-dialog-close>Add New Employee</button>
+    <button mat-button mat-dialog-close (click)="postEmployeeDetails()">Add New Employee</button>
     <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Close</button>
 </mat-dialog-actions>

@@ -1,0 +1,51 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "fullName": "dxqs",
+      "email": "cqds",
+      "mobile": "cqs",
+      "job": "cqsc",
+      "department": "csc"
+    },
+    {
+      "id": 3,
+      "fullName": "test",
+      "email": "ts",
+      "mobile": "ts",
+      "job": "ts",
+      "department": "ts"
+    },
+    {
+      "id": 4,
+      "fullName": "a",
+      "email": "a",
+      "mobile": "a",
+      "job": "a",
+      "department": "a"
+    },
+    {
+      "id": 5,
+      "fullName": "n",
+      "email": "n",
+      "mobile": ",",
+      "job": "n",
+      "department": "n"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
